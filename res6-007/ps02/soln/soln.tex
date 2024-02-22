@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\graphicspath{ {./../images/} }
+\usepackage{amscd}
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{cancel}
+\usepackage{tikz}
+\usepackage{empheq}
+\usetikzlibrary{matrix}
+\usepackage[thinlines]{easytable}
+\usepackage[left=2cm,top=1.5cm,right=2cm,bottom=1cm,nohead,nofoot]{geometry}
+
+% define an "answer box" for highlighting final answer
+\definecolor{anscolor}{rgb}{.87, .77, 1}
+
+\newlength\mytemplen
+\newsavebox\mytempbox
+
+\makeatletter
+\newcommand\ansbox{%
+    \@ifnextchar[%]
+       {\@ansbox}%
+       {\@ansbox[0pt]}}
+
+\def\@ansbox[#1]{%
+    \@ifnextchar[%]
+       {\@@ansbox[#1]}%
+       {\@@ansbox[#1][0pt]}}
+
+\def\@@ansbox[#1][#2]#3{
+    \sbox\mytempbox{#3}%
+    \mytemplen\ht\mytempbox
+    \advance\mytemplen #1\relax
+    \ht\mytempbox\mytemplen
+    \mytemplen\dp\mytempbox
+    \advance\mytemplen #2\relax
+    \dp\mytempbox\mytemplen
+    \colorbox{anscolor}{\hspace{1em}\usebox{\mytempbox}\hspace{1em}}}
+
+\makeatother
+
+% DOCUMENT BEGINNING %
+\begin{document}
+
+\begin{center}
+    Lecture 1: Signals and Systems: Part I
+\end{center}
+
+%%%%%%%%%%%%%%%
+% PROBLEM 2.1 %
+%%%%%%%%%%%%%%%
+\subsubsection*{P2.1}
+\textbf{a)}
+\textbf{i)}
+$f = \frac{1}{6}$ Hz; $T = 6$ seconds
+~\\
+
+\noindent
+\textbf{ii)}
+$f = \frac{2}{3}$ Hz; $T = \frac{3}{2}$ seconds
+~\\
+
+\noindent
+\textbf{iii)}
+$f = \frac{8\pi}{3}$ Hz; $T = \frac{3}{8\pi}$ seconds
+
+\textbf{b)}
+
+%%%%%%%%%%%%%%%
+% PROBLEM 2.2 %
+%%%%%%%%%%%%%%%
+\subsubsection*{P2.2}
+
+
+\end{document}
