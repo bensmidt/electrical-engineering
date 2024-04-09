@@ -1,3 +1,14 @@
+## Electrical Engineering
+- Circuit Analysis
+- Circuit Theory
+- Linear Systems and Signals
+- Digital Signal Processing
+- Digital Image Processing
+- Digital Video Processing
+- Information Theory
+- Coding Theory
+- Networking
+
 ## University Courses
 - [Signals and Systems (2011)](https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/)
 
