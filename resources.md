@@ -10,6 +10,7 @@
 - Networking
 
 ## University Courses
+- Real-Time Digital Signal Processing Laboratory [(2014)](https://users.ece.utexas.edu/~bevans/courses/realtime/)
 - [Signals and Systems (2011)](https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/)
 
 ## Textbooks
